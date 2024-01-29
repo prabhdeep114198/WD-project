@@ -95,7 +95,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         // Initial data
-        let labels = ['Dustbin 1', 'Dustbin 2', 'Dustbin 3', 'Dustbin 4'];
+        let labels = ['Dustbin 1', 'Dustbin 2', 'Dustbin 3', 'Dustbin 4','1','2','3','4','5','6'];
         let data = generateRandomData();
 
         // Create a bar chart using Chart.js

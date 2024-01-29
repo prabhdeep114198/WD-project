@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <title>Waste Manager</title>
+        
+    </head> 
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-xl">Waste Manager</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href = "https://academics.ncuindia.edu/Login.aspx">NCU Academics</a>
+        <a class="mr-5 hover:text-gray-900" href = "https://www.ncuindia.edu/">NCU main page</a>
+        <a class="mr-5 hover:text-gray-900"href = "https://www.instagram.com/the_northcap_univ/">NCU Instagram</a>
+        <a class="mr-5 hover:text-gray-900"href = "https://en.wikipedia.org/wiki/The_NorthCap_University">NCU Wikipedia</a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+    <main>
+      <div class="container mx-auto p-8 bg-white shadow-md rounded-md mt-8">
+        <h1 class="text-3xl font-bold mb-4">Waste Management System</h1>
+        <canvas id="wasteChart" class="w-full h-64"></canvas>
+    </div>
+    <section class="text-gray-600 body-font relative">
+      <div class="absolute inset-0 bg-gray-300">
+        <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2001112992193!2d77.04728007397277!3d28.50362648992548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199c98e90ff1%3A0x8b2aa76c53fb738e!2sThe%20NorthCap%20University!5e0!3m2!1sen!2sin!4v1704832651564!5m2!1sen!2sin" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+      </div>
+      <div class="container px-5 py-24 mx-auto flex">
+        <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+          <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96">
+            <img src="https://imgs.search.brave.com/9QsbQA8aurMFUYnqT-VGy74vlpo61YWE1u7tw-Z-YJI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2ludGFuYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDQvTkNVLUJyYW5k/LUxvZ28tMDEtMi5q/cGc" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+    
+          </a>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <!-- text - start -->
+        <div class="mb-10 md:mb-16">
+          <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Gallery</h2>
+    
+          <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+        </div>
+        <!-- text - end -->
+    
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+          <!-- image - start -->
+          <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96">
+            <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+    
+            <span class="relative mr-3 mb-3 inline-block rounded-lg border border-gray-500 px-2 py-1 text-xs text-gray-200 backdrop-blur md:px-3 md:text-sm">VR</span>
+          </a>
+          <!-- image - end -->
+    
+          <!-- image - start -->
+          <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+    
+            <span class="relative mr-3 mb-3 inline-block rounded-lg border border-gray-500 px-2 py-1 text-xs text-gray-200 backdrop-blur md:px-3 md:text-sm">Retro</span>
+          </a>
+          <!-- image - end -->
+    
+          <!-- image - start -->
+          <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96">
+            <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+    
+            <span class="relative mr-3 mb-3 inline-block rounded-lg border border-gray-500 px-2 py-1 text-xs text-gray-200 backdrop-blur md:px-3 md:text-sm">Tech</span>
+          </a>
+          <!-- image - end -->
+        </div>
+      </div>
+    </div>
+    
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Initial data
+        let labels = ['Dustbin 1', 'Dustbin 2', 'Dustbin 3', 'Dustbin 4', 'he', 'hehe', 'hehehe', 'haha', 'ha', 'hahaha'];
+        let data = fetchDataFromAWS();
+    
+        // Create a bar chart using Chart.js
+        const ctx = document.getElementById('wasteChart').getContext('2d');
+        const wasteChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Waste Types',
+                    data: data,
+                    backgroundColor: data.map(value => getColor(value)),
+                    borderColor: data.map(value => getBorderColor(value)),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 30
+                    }
+                }
+            }
+        });
+    
+        // Update data every half hour
+        setInterval(function () {
+            fetchDataAndDrawChart();
+        }, 30 * 60 * 1000); // 30 minutes interval
+    
+        async function fetchDataFromAWS() {
+            try {
+                const response = await fetch('http://a3k8n41tipl8ay-ats.iot.ap-south-1.amazonaws.com'); // Replace with your API Gateway URL
+                const awsData = await response.json();
+    
+                // Assuming the AWS response has an array of values
+                return awsData.map(item => item.value);
+            } catch (error) {
+                console.error('Error fetching data from AWS API Gateway:', error);
+                return generateRandomData();
+            }
+        }
+    
+        async function fetchDataAndDrawChart() {
+            try {
+                // Fetch data from AWS API Gateway
+                const awsData = await fetchDataFromAWS();
+    
+                // Assuming the AWS response has an array of values
+                data = awsData;
+    
+                // Update chart with new data
+                updateChart();
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+    
+        // ... (rest of the functions as in the previous code)
+        setInterval(function () {
+          data = generateRandomData();
+          wasteChart.data.datasets[0].data = data;
+          wasteChart.data.datasets[0].backgroundColor = data.map(value => getColor(value));
+          wasteChart.data.datasets[0].borderColor = data.map(value => getBorderColor(value));
+          wasteChart.update();
+      }, 30 * 60 * 1000); // 30 minutes interval
+
+      function generateRandomData() {
+          return Array.from({ length: labels.length }, () => Math.floor(Math.random() * (30 - 5 + 1)) + 5);
+      }
+
+      function getColor(value) {
+          if (value >= 5 && value <= 10) {
+              return 'rgba(144, 238, 144, 0.7)'; // Light green
+          } else if (value > 10 && value <= 20) {
+              return 'rgba(255, 165, 0, 0.7)'; // Orange
+          } else {
+              return 'rgba(255, 0, 0, 0.7)'; // Red
+          }
+      }
+
+      function getBorderColor(value) {
+          if (value >= 5 && value <= 10) {
+              return 'rgba(144, 238, 144, 1)';
+          } else if (value > 10 && value <= 20) {
+              return 'rgba(255, 165, 0, 1)';
+          } else {
+              return 'rgba(255, 0, 0, 1)';
+          }
+      }
+    });
+    
+    </script>
+</body>
+</html>
